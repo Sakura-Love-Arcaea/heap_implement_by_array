@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "headers/balanceTree_implement_by_array.h"
 #include "headers/heap_implement_by_array.h"
 void printSpaces(int n) {
@@ -46,24 +45,30 @@ int main() {
     heapInsert(tree, 3);
     heapInsert(tree, 5);
     heapInsert(tree, 9);
-    heapInsert(tree, 4);
-    heapInsert(tree, 23);
-    heapInsert(tree, 63);
-    heapInsert(tree, 12);
-    heapInsert(tree, 42);
-    heapInsert(tree, 26);
-    heapInsert(tree, 7);
-    heapInsert(tree, 19);
-    heapInsert(tree, 29);
-    heapInsert(tree, 64);
-    heapInsert(tree, 78);
-    heapInsert(tree, 2);
-    heapInsert(tree, 3);
-    heapInsert(tree, 5);
-    heapInsert(tree, 9);
-    heapInsert(tree, 4);
+    heapInsert(tree, 69);
+
     printTreeArray(tree);
-    print_Tree(tree->array, 0, 0, tree->index);
+
+    printf("pop: %d\n", heapPop(tree));
+    printf("pop: %d\n", heapPop(tree));
+    printf("pop: %d\n", heapPop(tree));
+    printf("pop: %d\n", heapPop(tree));
+    printf("pop: %d\n", heapPop(tree));
+    printf("pop: %d\n", heapPop(tree));
+    printf("pop: %d\n", heapPop(tree));
+    printf("pop: %d\n", heapPop(tree));
+    printf("pop: %d\n", heapPop(tree));
+    printf("pop: %d\n", heapPop(tree));
+    printf("pop: %d\n", heapPop(tree));
+    printf("pop: %d\n", heapPop(tree));
+    printf("pop: %d\n", heapPop(tree));
+    printf("pop: %d\n", heapPop(tree));
+    printf("pop: %d\n", heapPop(tree));
+
+
+    printTreeArray(tree);
+//    print_Tree(tree->array, 0, 0, tree->index);
+
 
     return 0;
 }

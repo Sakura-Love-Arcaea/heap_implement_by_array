@@ -12,6 +12,7 @@ struct treeArray {
 
 struct treeArray* createTreeArray(int size);
 void insertTree(struct treeArray *tree, int data);
+int popTree(struct treeArray *tree);
 void printTreeArray(struct treeArray *tree);
 
 #endif //DATA_STRUCTURE_BALANCETREE_IMPLEMENT_BY_ARRAY_H
