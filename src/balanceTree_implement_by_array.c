@@ -38,9 +38,32 @@ void printTreeArray(struct treeArray *tree) {
     printf("\n");
 }
 
-void traversalPath(struct treeArray *tree, int index) {
+int findAt(struct treeArray *tree, int target) {
+    int* array =  tree->array;
+    for (int i = 0; i < tree->index; i++) {
+        if (array[i] == target) {
+            return i;
+        }
+    }
+    return -1;
+}
+void printPath(int index) {
+    if (index == 0) {
+        printf("0->");
+        return;
+    }
+    printPath((index - 1) / 2);
+    printf("%d->", index);
+}
 
-
+void traversePath(struct treeArray *tree, int target) {
+    int index = findAt(tree, target);
+    if ((index != -1)) {
+        printPath((index - 1) / 2);
+        printf("%d\n", index);
+    } else {
+        printf("data not found\n");
+    }
 }
 
 //int main() {

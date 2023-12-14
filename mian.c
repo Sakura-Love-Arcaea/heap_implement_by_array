@@ -49,26 +49,25 @@ int main() {
 
     printTreeArray(tree);
 
-    printf("pop: %d\n", heapPop(tree));
-    printf("pop: %d\n", heapPop(tree));
-    printf("pop: %d\n", heapPop(tree));
-    printf("pop: %d\n", heapPop(tree));
-    printf("pop: %d\n", heapPop(tree));
-    printf("pop: %d\n", heapPop(tree));
-    printf("pop: %d\n", heapPop(tree));
-    printf("pop: %d\n", heapPop(tree));
-    printf("pop: %d\n", heapPop(tree));
-    printf("pop: %d\n", heapPop(tree));
-    printf("pop: %d\n", heapPop(tree));
-    printf("pop: %d\n", heapPop(tree));
-    printf("pop: %d\n", heapPop(tree));
-    printf("pop: %d\n", heapPop(tree));
-    printf("pop: %d\n", heapPop(tree));
+//    printf("pop: %d\n", heapPop(tree));
+//    printf("pop: %d\n", heapPop(tree));
+//    printf("pop: %d\n", heapPop(tree));
+//    printf("pop: %d\n", heapPop(tree));
+//    printf("pop: %d\n", heapPop(tree));
+//    printf("pop: %d\n", heapPop(tree));
+//    printf("pop: %d\n", heapPop(tree));
+//    printf("pop: %d\n", heapPop(tree));
+//    printf("pop: %d\n", heapPop(tree));
+//    printf("pop: %d\n", heapPop(tree));
+//    printf("pop: %d\n", heapPop(tree));
+//    printf("pop: %d\n", heapPop(tree));
+//    printf("pop: %d\n", heapPop(tree));
+//    printf("pop: %d\n", heapPop(tree));
+//    printf("pop: %d\n", heapPop(tree));
 
 
-    printTreeArray(tree);
 //    print_Tree(tree->array, 0, 0, tree->index);
-
+    traversePath(tree, 69);
 
     return 0;
 }
